@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SelectImage</string>
+    <string name="head">Head/Show</string>
+    <string name="button1">Image 1</string>
+    <string name="button2">Image 2</string>
+    <string name="show">Show Text</string>
+    <string name="text">Show Text</string>
+    <string name="back">Back</string>
+
+</resources>
