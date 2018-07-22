@@ -12,11 +12,11 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
-    Button button1, button2, show;
-    ImageView image;
-    CheckBox check;
-    EditText edit;
-    String text;
+    private Button button1, button2, show;
+    private ImageView image;
+    private CheckBox check;
+    private EditText edit;
+    private String text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,12 +27,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void image () {
-        button1 = (Button) findViewById(R.id.button1);
-        button2 = (Button) findViewById(R.id.button2);
-        image = (ImageView) findViewById(R.id.image);
-        check = (CheckBox) findViewById(R.id.checkbox);
-        show = (Button) findViewById(R.id.show);
-        edit = (EditText) findViewById(R.id.edit);
+        button1 = findViewById(R.id.button1);
+        button2 = findViewById(R.id.button2);
+        image = findViewById(R.id.image);
+        check = findViewById(R.id.checkbox);
+        show = findViewById(R.id.show);
+        edit = findViewById(R.id.edit);
         button1.setOnClickListener(
                 new Button.OnClickListener() {
                     @Override

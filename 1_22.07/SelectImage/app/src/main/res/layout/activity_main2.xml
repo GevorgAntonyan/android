@@ -13,11 +13,11 @@
         android:background="@color/greey"
         android:gravity="center"
         android:text="@string/show"
-        android:textSize="30dp"/>
+        android:textSize="@dimen/var40"/>
     <Button
         android:id="@+id/back"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/var100"
+        android:layout_height="@dimen/var40"
         android:text="@string/back"/>
 
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="var250">250dp</dimen>
+    <dimen name="var10">10dp</dimen>
+    <dimen name="var60">60dp</dimen>
+    <dimen name="var120">120dp</dimen>
+    <dimen name="var100">100dp</dimen>
+    <dimen name="var40">40dp</dimen>
+</resources>

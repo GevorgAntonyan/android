@@ -8,21 +8,20 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity {
-    TextView area;
-    public boolean bool;
+    private TextView area;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        area = (TextView) findViewById(R.id.view);
+        area = findViewById(R.id.view);
         area.setText(getIntent().getStringExtra("this"));
         back();
     }
 
     public void back() {
-        Button button = (Button) findViewById(R.id.back);
+        Button button = findViewById(R.id.back);
         button.setOnClickListener(
                 new Button.OnClickListener() {
                     @Override
