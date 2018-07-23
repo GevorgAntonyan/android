@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Change</string>
+    <string name="change">Change</string>
+    <string name="activity2">activity2</string>
+    <string name="change_text">change_text</string>
+    <string name="back">back</string>
+    <string name="MY_INTENT">MY_INTENT</string>
+    <string name="name">name</string>
+    <string name="yourName">Your name is - </string>
+</resources>
