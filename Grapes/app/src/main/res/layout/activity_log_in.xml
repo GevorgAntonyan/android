@@ -38,11 +38,11 @@
         android:maxLines="1"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="@dimen/var100"
         android:textColorHighlight="@color/grey"
         android:textColorHint="@color/grey"
-        android:textColor="#c9c8c8"
-        android:hint="Nickname"
+        android:textColor="@color/textColor"
+        android:hint="@string/nickname"
         android:alpha=".7"/>
 
 </RelativeLayout>

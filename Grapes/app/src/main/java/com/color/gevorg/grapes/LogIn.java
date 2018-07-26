@@ -10,24 +10,27 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 public class LogIn extends AppCompatActivity {
-    private ImageView image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
-        EditText text;
+        click();
     }
 
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
+        ImageView image = findViewById(R.id.image);
+
         if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
             image.setImageResource(R.drawable.horizon);
         } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
             image.setImageResource(R.drawable.vertical);
         }
     }
+
+
 
     private void click() {
         final EditText nickname = findViewById(R.id.nickname);
