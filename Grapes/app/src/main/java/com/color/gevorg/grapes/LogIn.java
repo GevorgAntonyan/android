@@ -56,6 +56,7 @@ public class LogIn extends AppCompatActivity {
                         ProgressBar progress = findViewById(R.id.progress);
                         if (isValid(var)) {
                             submit.setEnabled(false);
+                            nickname.setEnabled(false);
                             progress.setVisibility(VISIBLE);
                         } else {
                             Toast.makeText(LogIn.this, "Invalid Nickname", Toast.LENGTH_SHORT).show();
@@ -67,7 +68,7 @@ public class LogIn extends AppCompatActivity {
     }
 
     public static boolean isValid(String str) {
-        if(str.length() > 10 || str.length() == 0) {
+        if(str.length() > 15 || str.length() <= 3) {
             return false;
         }
         for(int i = 0; i < str.length(); ++i) {
