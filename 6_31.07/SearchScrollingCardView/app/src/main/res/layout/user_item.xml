@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/card_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/cardBackground"
+    app:cardCornerRadius="@dimen/radius"
+    android:layout_margin="@dimen/card_margin"
+    app:cardElevation="@dimen/elevation"
+    android:elevation="@dimen/litle_dp"
+    >
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        android:layout_margin="@dimen/image_margin"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/university_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:maxLines="2"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_alignParentLeft="true" />
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_close_black_24dp"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/large_text"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginTop="@dimen/margin_top"
+        android:maxLines="2"/>
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="bottom">
+        <ImageButton
+            android:id="@+id/call_but"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_call_black_24dp"
+            android:layout_gravity="end"
+            />
+        <ImageButton
+            android:id="@+id/email_but"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_vertical"
+
+            android:src="@drawable/ic_mail_outline_black_24dp"
+            />
+</FrameLayout>
+
+
+</android.support.v7.widget.CardView>
